@@ -116,3 +116,38 @@ details[open] > summary::after {
 details[open] > summary {
   font-weight: 700;
 }
+
+@media screen and (max-width: 375px) {
+  .card {
+    flex-direction: column;
+    width: 95vw;
+    height: 90vh;
+  }
+  .accordion {
+    width: 100%;
+    padding: 20px;
+  }
+  .accordion > h1 {
+    text-align: center;
+  }
+  summary {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .details-content {
+    padding-bottom: 10px;
+  }
+  .image {
+    height: 40%;
+    overflow: initial;
+  }
+  .image > img {
+    height: 250px;
+    transform: translateY(-70px) translateX(0px);
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    transform: translateX(-10px) translateY(-40px);
+  }
+}
